@@ -1,0 +1,57 @@
+.about {
+  display: none;
+  background-color: rgb(230, 230, 230);
+
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+
+  &__animation {
+    animation: about 1s;
+    animation-fill-mode: forwards;
+
+    @keyframes about {
+      0% {
+        left: -1700px;
+        top: 0px;
+      }
+
+      100% {
+        left: 0px;
+        top: 0px;
+      }
+    }
+  }
+}
+.about-inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  height: 100vh;
+
+  &__lhs {
+    display: grid;
+    justify-content: stretch;
+    background-image: linear-gradient(
+      to bottom,
+      #ced3d8 0,
+      #e3e8ec 58%,
+      #e4e8ec 100%
+    );
+  }
+
+  &__rhs {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+    justify-content: stretch;
+    align-items: stretch;
+    background-image: linear-gradient(
+      to bottom,
+      #ced3d8 0,
+      #e3e8ec 58%,
+      #e4e8ec 100%
+    );
+  }
+}

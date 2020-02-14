@@ -1,0 +1,91 @@
+.hero-video {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(
+    to bottom,
+    #ced3d8 0,
+    #e3e8ec 58%,
+    #e4e8ec 100%
+  );
+}
+.hero-video::before {
+  position: absolute;
+  background-color: #000000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+.hero-video video {
+  border: 10px solid transparent;
+  outline: 1px solid rgb(255, 255, 255);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  /* The following will size the video to fit the full container. Not necessary, just nice.*/
+  width: 90%;
+  height: 50%;
+  object-fit: cover;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+.main-menu {
+  color: $color-secondary;
+
+  &:link {
+    text-decoration: none;
+    font-family: $heading-font-family;
+    text-transform: uppercase;
+    font-weight: lighter;
+  }
+  &:hover {
+    color: red;
+  }
+}
+
+.intro-heading {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-size: 20vw;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-fill: transparent;
+  font-family: $heading-font-family;
+  color: transparent;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.intro-heading:hover {
+  color: rgba($color: #fff, $alpha: 0.2);
+}
+
+.slideone {
+  background-color: yellowgreen;
+  width: 50%;
+  height: 100%;
+  left: -30%;
+  position: absolute;
+  z-index: 999;
+  overflow: hidden;
+  display: none;
+}
+
+.mystyle {
+  width: 100%;
+  padding: 25px;
+  background-color: coral;
+  color: white;
+  font-size: 25px;
+  box-sizing: border-box;
+}

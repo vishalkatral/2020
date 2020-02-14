@@ -1,0 +1,69 @@
+.work {
+  display: none;
+  background-color: aqua;
+
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+
+  &__animation {
+    animation: work 1s;
+    animation-fill-mode: forwards;
+
+    @keyframes work {
+      0% {
+        left: -1700px;
+        top: 0px;
+      }
+
+      100% {
+        left: 0px;
+        top: 0px;
+      }
+    }
+  }
+}
+.work-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  height: 100vh;
+  justify-content: stretch;
+  align-items: stretch;
+
+  &__content {
+    background-color: green;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+}
+
+.work-heading-primary {
+  font-size: $heading-font-size;
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-fill: transparent;
+  color: transparent;
+  text-align: left;
+  transition: all 0.3s;
+  letter-spacing: 10px;
+  border: 2px solid green;
+}
+
+.project-card {
+  background-color: #fff;
+  border: 1px solid black;
+  width: 250px;
+  height: 350px;
+  margin: 0 30px;
+}

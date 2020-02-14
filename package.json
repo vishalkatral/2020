@@ -1,0 +1,14 @@
+{
+  "name": "vishal-demo",
+  "version": "1.0.0",
+  "description": "Landing page demo",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "vishal",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
