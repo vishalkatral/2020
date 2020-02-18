@@ -6,172 +6,103 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
 
     <link
       href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,600|Roboto:400,700,900&display=swap"
       rel="stylesheet"
     />
-    <title>hello world</title>
+    <title>#</title>
 
-   
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
-
-
-
-    <style>
-      .wrapper {
-        overflow: hidden;
-      }
-      .outer {
-        margin: 40px;
-        padding: 30px;
-        position: relative;
-      }
-      .header {
-        position: absolute;
-        top: 40px;
-        left:0;
-        display: grid;
-        grid-template-columns: .94fr 1fr;
-        width: 100%;
-        z-index:2;
-      }
-      .logo {
-        margin-left: 30px;
-        text-transform: uppercase;
-        font-weight: 300;
-        font-family: 'Roboto', sans-serif;
-      }
-      .main-inner {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-      }
-      .mainrhs{
-        background-color: #f3f9f9;
-        align-items: center;
-        height: 81vh;
-        text-align: center;
-      }
-
-      .carousel-cell img{
-        /*width: 100%;
-        height: 640px;*/
-        width: 650px;
-        height: 640px;
-        overflow: hidden;
-      }
-      .mainlhs {
-        display: grid;
-        align-items: center;
-        justify-content: flex-start;
-      }
-      .content {
-        align-self: center;
-      }
-      .primary-heading {
-        font-size: 96px;
-        font-weight: 900;
-        font-family: 'Roboto', sans-serif;
-        text-transform: uppercase;
-      }
-      .sub-heading{
-        font-size: 64px;
-        font-weight: 300;
-        font-family: 'Roboto', sans-serif;
-        text-transform: uppercase;
-      }
-      .footer {
-        position: absolute;
-        bottom: 40px;
-        left:0;
-        display: grid;
-        grid-template-columns: .90fr 1.3fr;
-        align-items: center;
-        width: 100%;
-        min-height: 60px;
-      }
-      .hire {
-        margin-left: 30px;
-      }
-      button {background-color: transparent; border:0;}
-      .btn {
-        padding: 10px 20px;
-        cursor: pointer;
-      }
-      .btn-primary {
-        border:1px solid #383838;
-      }
-      .btn-primary:hover {
-        border:1px solid #383838;
-        background-color:#eee;
-      }
-      .btn-primary a:link {
-        text-decoration: none;
-        color: #383838;
-      }
-      .copyrights {
-        color: rgba(0,0,0,0.2);
-        font-size:10px;
-      }
-     /* .flickity-button {
-        display: none;
-      }*/
-      .flickity-page-dots {
-        bottom: 50px;
-        text-align: right;
-        right: 50px;
-      }
-
-    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="wrapper">
       <!--home page content start-->
-        <div class="outer">
-          <div class="header">
-            <div class="logo">vishal k.</div>
-            <div class="nav">menu</div>
+      <div class="outer">
+        <div class="header">
+          <div class="logo">vishal k.</div>
+          <div class="main-menu">
+            <input
+              type="checkbox"
+              class="navigation__checkbox"
+              id="navi-toggle"
+            />
+
+            <label for="navi-toggle" class="navigation__button">
+              <span class="navigation__icon">&nbsp;</span>
+            </label>
+
+            <div class="navigation__background">&nbsp;</div>
+
+            <nav class="navigation__nav">
+              <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a href="index.html" class="navigation__link">Home</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="about.html" class="navigation__link">About</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">About</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">About</a>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <div class="main-inner">
-            <div class="mainlhs">
-              <div class="content">
-                <h3 class="primary-heading">I Design</h3>
-                <h5 class="sub-heading">Merchandise</h5>
-              </div>
-            </div>
-            <div class="mainrhs">
-              <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "autoPlay": false, "prevNextButtons": false }'>
-                <div class="carousel-cell">
-                  <img src="images/slider2.jpg" alt="mobile app design" />
-                </div>
-                <div class="carousel-cell">
-                  <img src="images/mobile1.jpg" alt="mobile app design"/>
-                </div>
-                <div class="carousel-cell">
-                  <img src="images/mobile1.jpg" alt="mobile app design"/>
-                </div>
-              </div>
+        </div>
+
+        <div class="main-inner">
+          <div class="mainlhs">
+            <div class="content">
+              <h3 class="primary-heading">I Design</h3>
+              <h5 class="sub-heading">Mobile Apps</h5>
             </div>
           </div>
-           <div class="footer">
-            <div class="hire">
-              <button class="btn btn-primary"><a href="mailto:katral.vishal@gmail.com?Subject=Hello%20again" target="_top">let's work together</a></button>
-            </div>
-            <div class="copyrights">
-              <span>&copy; Copyrights 2010-2020. All rights reserved by Vishal Katral</span>
+          <div class="mainrhs">
+            <div
+              class="main-carousel"
+              data-flickity='{ "cellAlign": "left", "contain": true, "autoPlay": 1500, "prevNextButtons": true }'
+            >
+              <div class="carousel-cell">
+                <img src="images/mobile1.jpg" alt="mobile app design" />
+              </div>
+              <div class="carousel-cell">
+                <img src="images/slider2.jpg" alt="mobile app design" />
+              </div>
+              <div class="carousel-cell">
+                <img src="images/mobile1.jpg" alt="mobile app design" />
+              </div>
             </div>
           </div>
         </div>
+        <div class="footer">
+          <div class="hire">
+            <button class="btn btn-primary">
+              <a
+                href="mailto:katral.vishal@gmail.com?Subject=Hello%20again"
+                target="_top"
+                >let's work together</a
+              >
+            </button>
+          </div>
+          <div class="copyrights">
+            <span
+              >&copy; Copyrights 2010-2020. All rights reserved by Vishal
+              Katral</span
+            >
+          </div>
+        </div>
+      </div>
       <!--home page content end-->
-
-   
     </div>
 
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- JavaScript -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   </body>
