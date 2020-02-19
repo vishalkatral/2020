@@ -135,6 +135,11 @@ h5,
 h6 {
   font-family: "Abril Fatface", serif; }
 
+a:link,
+a:visited {
+  color: #000;
+  text-decoration: none; }
+
 .wrapper {
   overflow: hidden;
   height: 100vh; }
@@ -280,7 +285,7 @@ button {
   border-radius: 50%;
   position: fixed;
   top: 50px;
-  z-index: 0;
+  z-index: 2;
   transition: transform 0.8s;
   margin-left: 1px;
   /*transform: scale(80);*/ }
@@ -366,7 +371,7 @@ button {
   grid-template-rows: 1fr; }
 
 .secondary-heading {
-  font-size: 96px;
+  font-size: 56px;
   font-weight: 900;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
@@ -375,7 +380,7 @@ button {
   position: relative; }
 
 .secondary-sub-heading {
-  font-size: 61.4px;
+  font-size: 21.4px;
   font-weight: 300;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
@@ -406,3 +411,215 @@ button {
   height: 100vh;
   object-fit: cover;
   align-self: center; }
+
+.socialmedia {
+  right: 0;
+  bottom: 30px;
+  position: absolute;
+  z-index: 1; }
+  .socialmedia ul {
+    list-style-type: none; }
+  .socialmedia__list li {
+    display: inline-block;
+    margin: 20px 20px 2px 0; }
+    .socialmedia__list li a img {
+      height: 15px;
+      filter: invert(100%) sepia(0%) saturate(1500%) hue-rotate(86deg) brightness(100%) contrast(200%); }
+    .socialmedia__list li a :hover {
+      filter: invert(50%) sepia(0%) saturate(0%) hue-rotate(86deg) brightness(0%) contrast(0%); }
+
+.work {
+  display: grid; }
+  .work__inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh; }
+
+h4 {
+  font-size: 20px; }
+
+h1 {
+  font-size: 150px; }
+
+.projects {
+  width: 100%; }
+
+.work-heading {
+  margin-top: 70px;
+  margin-bottom: 10px;
+  padding-left: 30px; }
+
+.tertiary-heading {
+  font-size: 56px;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.1);
+  margin-left: -6px;
+  position: relative; }
+
+.tertiary-sub-heading {
+  font-size: 21.4px;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.3);
+  margin-left: -5px;
+  position: relative; }
+
+.smallOne,
+.smallTwo,
+.smallThree,
+.smallFour,
+.smallFive,
+.smallSix,
+.smallSeven,
+.smallEight,
+.smallNine {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 0px 0px 0px 30px;
+  cursor: pointer; }
+
+.thumbnail {
+  object-fit: contain;
+  height: 100%; }
+
+.large {
+  object-fit: contain;
+  height: 100%; }
+
+.smallOne {
+  background-color: yellow; }
+  .smallOne:hover ~ .largeOne {
+    display: block; }
+
+.largeOne {
+  display: block;
+  background-color: yellow;
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  right: 0;
+  top: 0; }
+
+.smallTwo {
+  background-color: blue; }
+  .smallTwo:hover ~ .largeTwo {
+    display: block;
+    background-color: blue; }
+
+.largeTwo {
+  display: none;
+  background-color: blue;
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  right: 0;
+  top: 0; }
+
+.smallThree {
+  background-color: green; }
+  .smallThree:hover ~ .largeThree {
+    display: block;
+    background-color: green; }
+
+.largeThree {
+  display: none;
+  background-color: green;
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  right: 0;
+  top: 0; }
+
+.smallFour {
+  background-color: pink; }
+  .smallFour:hover ~ .largeFour {
+    display: block;
+    background-color: pink; }
+
+.largeFour {
+  display: none;
+  background-color: pink;
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  right: 0;
+  top: 0; }
+
+.smallFive {
+  background-color: grey; }
+  .smallFive:hover ~ .largeFive {
+    display: block;
+    background-color: grey; }
+
+.largeFive {
+  display: none;
+  background-color: grey;
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  right: 0;
+  top: 0; }
+
+.smallSix {
+  background-color: orange; }
+  .smallSix:hover ~ .largeSix {
+    display: block;
+    background-color: orange; }
+
+.largeSix {
+  display: none;
+  background-color: orange;
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  right: 0;
+  top: 0; }
+
+.smallSeven {
+  background-color: purple; }
+  .smallSeven:hover ~ .largeSeven {
+    display: block;
+    background-color: purple; }
+
+.largeSeven {
+  display: none;
+  background-color: purple;
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  right: 0;
+  top: 0; }
+
+.smallEight {
+  background-color: aqua; }
+  .smallEight:hover ~ .largeEight {
+    display: block;
+    background-color: aqua; }
+
+.largeEight {
+  display: none;
+  background-color: aqua;
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  right: 0;
+  top: 0; }
+
+.smallNine {
+  background-color: orangered; }
+  .smallNine:hover ~ .largeNine {
+    display: block;
+    background-color: orangered; }
+
+.largeNine {
+  display: none;
+  background-color: orangered;
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  right: 0;
+  top: 0; }

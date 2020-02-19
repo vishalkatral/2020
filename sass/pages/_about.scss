@@ -4,7 +4,7 @@
   grid-template-rows: 1fr;
 }
 .secondary-heading {
-  font-size: 96px;
+  font-size: 56px;
   font-weight: 900;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
@@ -13,7 +13,7 @@
   position: relative;
 }
 .secondary-sub-heading {
-  font-size: 61.4px;
+  font-size: 21.4px;
   font-weight: 300;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
@@ -40,9 +40,41 @@
   color: rgba(0, 0, 0, 0.8);
 }
 
+// .video-box {
+//   background: url('/images/poster.png') no-repeat;
+//   background-size: cover;
+// }
 .video-box video {
   width: 100%;
   height: 100vh;
   object-fit: cover;
   align-self: center;
+}
+
+.socialmedia {
+  right: 0;
+  bottom: 30px;
+  position: absolute;
+  z-index: 1;
+
+  & ul {
+    list-style-type: none;
+  }
+  
+  &__list {
+    li {
+      display: inline-block;
+      margin: 20px 20px 2px 0;
+
+      a {
+        img {
+          height: 15px;
+          filter: invert(100%) sepia(0%) saturate(1500%) hue-rotate(86deg) brightness(100%) contrast(200%);
+        }
+        :hover {
+          filter: invert(50%) sepia(0%) saturate(0%) hue-rotate(86deg) brightness(0%) contrast(0%);
+        }
+      }
+    }
+  }
 }
