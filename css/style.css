@@ -154,7 +154,7 @@ a:visited {
   top: 40px;
   left: 0;
   display: grid;
-  grid-template-columns: 0.94fr 1fr;
+  grid-template-columns: 0.93fr 1fr;
   width: 100%;
   z-index: 2; }
 
@@ -202,7 +202,7 @@ a:visited {
   align-self: center; }
 
 .primary-heading {
-  font-size: 96px;
+  font-size: 126px;
   font-weight: 900;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
@@ -365,6 +365,77 @@ button {
   top: 0;
   transform: rotate(-45deg); }
 
+.homepage-animation {
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  height: 100vh;
+  position: relative; }
+
+.box1 {
+  background: #000;
+  clip-path: circle(75%);
+  -webkit-clip-path: circle(75%);
+  height: 100%;
+  width: 100%;
+  animation: circle 5s infinite;
+  -webkit-animation: circle 5s infinite; }
+
+.box1:hover {
+  animation: circle 5s infinite;
+  -webkit-animation: circle 5s infinite; }
+
+@keyframes circle {
+  0% {
+    clip-path: circle(75%);
+    -webkit-clip-path: circle(75%); }
+  50% {
+    clip-path: circle(25%);
+    -webkit-clip-path: circle(25%); }
+  100% {
+    clip-path: circle(0%);
+    -webkit-clip-path: circle(0%); } }
+
+.box2 {
+  background: #000;
+  clip-path: circle(75%);
+  -webkit-clip-path: circle(75%);
+  height: 100%;
+  width: 100%; }
+
+.box2:hover {
+  animation: boxTwo 3s infinite;
+  -webkit-animation: boxTwo 3s infinite; }
+
+@keyframes boxTwo {
+  0% {
+    clip-path: circle(0%);
+    -webkit-clip-path: circle(0%); }
+  50% {
+    clip-path: circle(25%);
+    -webkit-clip-path: circle(25%); }
+  100% {
+    clip-path: circle(75%);
+    -webkit-clip-path: circle(75%); } }
+
+.triangle-fill {
+  background: #000;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  height: 100%;
+  width: 100%; }
+
+.triangle-fill:hover {
+  animation: triangle 10s infinite;
+  -webkit-animation: triangle 10s infinite; }
+
+@keyframes triangle {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
 .content-box {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -445,7 +516,7 @@ h1 {
   width: 100%; }
 
 .work-heading {
-  margin-top: 70px;
+  margin-top: 130px;
   margin-bottom: 10px;
   padding-left: 30px; }
 
@@ -477,9 +548,9 @@ h1 {
 .smallEight,
 .smallNine {
   display: inline-block;
-  width: 100px;
-  height: 100px;
-  margin: 0px 0px 0px 30px;
+  width: 130px;
+  height: 130px;
+  margin: 5px 0px 0px 30px;
   cursor: pointer; }
 
 .thumbnail {
@@ -491,7 +562,7 @@ h1 {
   height: 100%; }
 
 .smallOne {
-  background-color: yellow; }
+  background-color: transparent; }
   .smallOne:hover ~ .largeOne {
     display: block; }
 
@@ -505,7 +576,7 @@ h1 {
   top: 0; }
 
 .smallTwo {
-  background-color: blue; }
+  background-color: transparent; }
   .smallTwo:hover ~ .largeTwo {
     display: block;
     background-color: blue; }
@@ -520,7 +591,7 @@ h1 {
   top: 0; }
 
 .smallThree {
-  background-color: green; }
+  background-color: transparent; }
   .smallThree:hover ~ .largeThree {
     display: block;
     background-color: green; }
@@ -535,7 +606,7 @@ h1 {
   top: 0; }
 
 .smallFour {
-  background-color: pink; }
+  background-color: transparent; }
   .smallFour:hover ~ .largeFour {
     display: block;
     background-color: pink; }
@@ -550,7 +621,7 @@ h1 {
   top: 0; }
 
 .smallFive {
-  background-color: grey; }
+  background-color: transparent; }
   .smallFive:hover ~ .largeFive {
     display: block;
     background-color: grey; }
@@ -565,7 +636,7 @@ h1 {
   top: 0; }
 
 .smallSix {
-  background-color: orange; }
+  background-color: transparent; }
   .smallSix:hover ~ .largeSix {
     display: block;
     background-color: orange; }
@@ -580,7 +651,7 @@ h1 {
   top: 0; }
 
 .smallSeven {
-  background-color: purple; }
+  background-color: transparent; }
   .smallSeven:hover ~ .largeSeven {
     display: block;
     background-color: purple; }
@@ -595,7 +666,7 @@ h1 {
   top: 0; }
 
 .smallEight {
-  background-color: aqua; }
+  background-color: transparent; }
   .smallEight:hover ~ .largeEight {
     display: block;
     background-color: aqua; }
@@ -610,7 +681,7 @@ h1 {
   top: 0; }
 
 .smallNine {
-  background-color: orangered; }
+  background-color: transparent; }
   .smallNine:hover ~ .largeNine {
     display: block;
     background-color: orangered; }
