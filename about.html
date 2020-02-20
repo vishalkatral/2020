@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link
+    rel="stylesheet"
+    href="css/flickity.min.css"
+  />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,600|Roboto:400,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <title># Who am i | About</title>
+
+    
+    
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--alphabets start-->
+      <div class="inner">
+        <div class="alphabets">
+          <header class="header">
+            <div class="header__logo"><a href="index.html">vishal k.</a></div>
+            <div class="header__menu">
+              <span class="active">about</span>
+            </div>
+          </header>
+          <div class="alphabets__item1">&nbsp;</div>
+          <div class="alphabets__item2">
+            <div class="letters">
+              <span class="letterI" id="I">i</span>
+            </div>
+          </div>
+          <div class="alphabets__item3">
+            <div class="letters">
+              <span class="letterS" id="S">s</span>
+            </div>
+          </div>
+          <div class="alphabets__item4">&nbsp;</div>
+          <div class="alphabets__item5">
+            <div class="letters">
+              <span class="letterV" id="V">v</span>
+            </div>
+          </div>
+          <div class="alphabets__item6">
+            <div class="container">
+              <div class="aboutme">
+                <div class="aboutme__lhs">
+                  <h2 class="primary-heading">Who am i</h2>
+                  <p class="paragraph">I’m Vishal Katral, an html developer cum designer currently working as
+                    a freelance. I’ve been working in the IT Sector for more than 7
+                    years in various organisations. I love good design with
+                    attention to detail and the combination of code and design. In
+                    close, iterative collaboration with customers, I develop
+                    appealing solutions for complex problems and tasks.
+                    <br/><br/>
+                    Feel free to check my resume. </p>
+                </div>
+                <div class="aboutme__rhs">
+                  <div class="aboutme__rhs--videoBox">
+                    <!--spinner start-->
+                    <div class="loadingio-spinner-ripple-cg0qyc8ucd">
+                      <div class="ldio-7oqrmoldtcs">
+                        <div></div>
+                        <div></div>
+                      </div>
+                    </div>
+                    <!--spinner end-->
+                    <video class="video" preload="auto" src="/videos/video_1.MP4" autoplay loop/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="alphabets__item7">
+            <div class="letters">
+              <span class="letterH" id="H">h</span>
+            </div>
+          </div>
+          <div class="alphabets__item8">&nbsp;</div>
+          <div class="alphabets__item9">
+            <div class="letters">
+              <span class="letterL" id="L">l</span>
+            </div>
+          </div>
+          <div class="alphabets__item10">
+            <div class="letters">
+              <span class="letterA" id="A">a</span>
+            </div>
+          </div>
+          <div class="alphabets__item11">&nbsp;</div>
+          <div class="alphabets__item12">&nbsp;</div>
+        </div>
+      </div>
+      <!--alphabets end-->
+
+      
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <!-- JavaScript -->
+    <script>
+      $(window).mousemove(function(event) {
+      $("#V, #I, #S, #H, #A, #L").css({
+        "margin-left": -(event.pageX * 0.1),
+        "margin-top": -(event.pageY * 0.1)
+      });
+    });
+    </script>
+    <script src="js/flickity.pkgd.min.js"></script>
+  </body>
+</html>

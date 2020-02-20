@@ -8,16 +8,24 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+      href="css/flickity.min.css"
     />
 
     <link
       href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,600|Roboto:400,700,900&display=swap"
       rel="stylesheet"
     />
-    <title>#</title>
+    <title># Welcome | Vishal K.</title>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ 
+    <script>
+      $(window).mousemove(function(event) {
+      $("#V, #I, #S, #H, #A, #L").css({
+        "margin-left": -(event.pageX * 0.1),
+        "margin-top": -(event.pageY * 0.1)
+      });
+    });
+    </script>
   </head>
   <body>
     <div class="wrapper">
@@ -25,52 +33,68 @@
       <div class="inner">
         <div class="alphabets">
           <header class="header">
-            <div class="header__logo">vk.</div>
+            <div class="header__logo"><a href="index.html">vishal k.</a></div>
             <div class="header__menu">
-              <a href="#">about</a>
+              <a href="about.html">about</a>
             </div>
           </header>
-          <div class="alphabets__item1">1</div>
+          <div class="alphabets__item1">&nbsp;</div>
           <div class="alphabets__item2">
             <div class="letters">
-              <span class="letterI">i</span>
+              <span class="letterI" id="I">i</span>
             </div>
           </div>
           <div class="alphabets__item3">
             <div class="letters">
-              <span class="letterS">s</span>
+              <span class="letterS" id="S">s</span>
             </div>
           </div>
-          <div class="alphabets__item4">4</div>
+          <div class="alphabets__item4">&nbsp;</div>
           <div class="alphabets__item5">
-            <div class="letters">v</div>
+            <div class="letters">
+              <span class="letterV" id="V">v</span>
+            </div>
           </div>
           <div class="alphabets__item6">
             <div class="container">
               <div class="carousel"
   data-flickity='{ "wrapAround": true, "autoPlay": true }'>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
+  <div class="carousel-cell">
+    <img src="images/slider1.jpg" alt="mobile app" class="carousel-cell__image"/>
+  </div>
+  <div class="carousel-cell">
+    <img src="images/slider3.png" alt="mobile app" class="carousel-cell__image"/>
+  </div>
+  <div class="carousel-cell">
+    <img src="images/slider1.jpg" alt="mobile app" class="carousel-cell__image"/>
+  </div>
+  <div class="carousel-cell">
+    <img src="images/slider3.png" alt="mobile app" class="carousel-cell__image"/>
+  </div>
+  <div class="carousel-cell">
+    <img src="images/slider2.jpg" alt="mobile app" class="carousel-cell__image"/>
+  </div>
 </div>
             </div>
           </div>
           <div class="alphabets__item7">
             <div class="letters">
-              <span class="letterS">h</span>
+              <span class="letterH" id="H">h</span>
             </div>
           </div>
-          <div class="alphabets__item8">8</div>
+          <div class="alphabets__item8">&nbsp;</div>
           <div class="alphabets__item9">
-            <div class="letters">l</div>
+            <div class="letters">
+              <span class="letterL" id="L">l</span>
+            </div>
           </div>
           <div class="alphabets__item10">
-            <div class="letters">a</div>
+            <div class="letters">
+              <span class="letterA" id="A">a</span>
+            </div>
           </div>
-          <div class="alphabets__item11">11</div>
-          <div class="alphabets__item12">12</div>
+          <div class="alphabets__item11">&nbsp;</div>
+          <div class="alphabets__item12">&nbsp;</div>
         </div>
       </div>
       <!--alphabets end-->
@@ -78,8 +102,16 @@
       
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <!-- JavaScript -->
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script>
+      $(window).mousemove(function(event) {
+      $("#V, #I, #S, #H, #A, #L").css({
+        "margin-left": -(event.pageX * 0.1),
+        "margin-top": -(event.pageY * 0.1)
+      });
+    });
+    </script>
+    <script src="js/flickity.pkgd.min.js"></script>
   </body>
 </html>
