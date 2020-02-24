@@ -154,6 +154,9 @@ a:visited {
   grid-template-columns: .5fr 1.5fr 1.5fr .5fr;
   grid-template-rows: .5fr 2fr .5fr;
   height: 100vh; }
+  @media screen and (max-width: 768px) {
+    .alphabets {
+      grid-template-columns: 0 1fr 1fr 0; } }
   .alphabets__item2 .letters span.letterI {
     color: rgba(251, 227, 50, 0.2);
     font-size: 130px;
@@ -162,6 +165,9 @@ a:visited {
     position: absolute;
     top: -20px;
     z-index: -1; }
+    @media screen and (max-width: 768px) {
+      .alphabets__item2 .letters span.letterI {
+        display: none; } }
   .alphabets__item3 .letters span.letterS {
     color: rgba(251, 227, 50, 0.2);
     font-size: 130px;
@@ -171,6 +177,9 @@ a:visited {
     position: absolute;
     top: 30px;
     z-index: 2; }
+    @media screen and (max-width: 768px) {
+      .alphabets__item3 .letters span.letterS {
+        display: none; } }
   .alphabets__item5 .letters {
     position: relative; }
     .alphabets__item5 .letters span.letterV {
@@ -183,6 +192,9 @@ a:visited {
       left: -30px;
       z-index: 2;
       overflow: hidden; }
+      @media screen and (max-width: 768px) {
+        .alphabets__item5 .letters span.letterV {
+          display: none; } }
   .alphabets__item6 {
     grid-column: 2 / 4;
     grid-row: 2 / 3;
@@ -197,6 +209,9 @@ a:visited {
     right: -30px;
     z-index: 2;
     overflow: hidden; }
+    @media screen and (max-width: 768px) {
+      .alphabets__item7 .letters span.letterH {
+        display: none; } }
   .alphabets__item9 .letters {
     position: relative; }
     .alphabets__item9 .letters span.letterL {
@@ -209,6 +224,9 @@ a:visited {
       position: absolute;
       top: 0px;
       left: 80px; }
+      @media screen and (max-width: 768px) {
+        .alphabets__item9 .letters span.letterL {
+          display: none; } }
   .alphabets__item10 .letters {
     position: relative; }
     .alphabets__item10 .letters span.letterA {
@@ -221,6 +239,9 @@ a:visited {
       position: absolute;
       top: -30px;
       right: 80px; }
+      @media screen and (max-width: 768px) {
+        .alphabets__item10 .letters span.letterA {
+          display: none; } }
   .alphabets__item12 {
     grid-area: 2 / 3 / 3 / 4;
     z-index: 0; }
@@ -263,14 +284,22 @@ a:visited {
   transform: translateX(-50%);
   display: grid;
   grid-template-columns: repeat(2, 1fr); }
+  @media screen and (max-width: 768px) {
+    .header {
+      top: 35px;
+      width: 90%; } }
   .header__logo {
     text-align: left;
     text-transform: uppercase;
     font-weight: lighter;
     font-family: "Roboto", sans-serif;
     letter-spacing: 1px; }
+    .header__logo a:link, .header__logo a:visited {
+      color: #000; }
   .header__menu {
     text-align: right; }
+    .header__menu a:link, .header__menu a:visited {
+      color: #000; }
 
 .carousel {
   background: transparent; }
@@ -288,6 +317,14 @@ a:visited {
     /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
     transition: all .2s; }
+    @media screen and (max-width: 768px) {
+      .carousel-cell__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        -webkit-filter: grayscale(0%);
+        /* Safari 6.0 - 9.0 */
+        filter: grayscale(0%); } }
     .carousel-cell__image:hover {
       -webkit-filter: grayscale(0%);
       /* Safari 6.0 - 9.0 */
