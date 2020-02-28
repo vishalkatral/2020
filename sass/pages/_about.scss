@@ -5,29 +5,60 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
       width: 100%;
       grid-template-columns: auto;
       box-sizing: border-box;
-      padding: 20px 10px;
-      height: auto;
+      padding: 30px 10px 30px 10px;
+      // height: auto;
+      
   }
     
     &__lhs {
         background-color: rgba(251, 227, 50, 0);
-        padding: 40px;
-        align-self: center;
-        border: 12px solid rgba(251, 227, 50, 0.2);
+        padding: 0px 100px 0 0;
+        align-self: flex-end;
+        // border-bottom: 1px solid rgba(251, 227, 50, 1);
         border-right: 0px;
+        
+        @media screen and (max-width: 768px) {
+          padding: 100px 20px;
+          height: 100%;
+          border: 0;
+          background-color: rgba(251, 227, 50, 0.8);
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
     }
     &__rhs {
         width: 100%;
         height: 100%;
-        // border: 12px solid rgba(251, 227, 50, 0.2);
+  
+        @media screen and (max-width: 768px) {
+          
+         }
 
         &--videoBox {
             height: 100%;
             position: relative;
+
+            @media screen and (max-width: 768px) {
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: -1;
+            }
+
+            &::before {
+              content: "";
+              position: absolute;
+              background-color: rgba(255,255,255, 0.2);
+              z-index: 1;
+              width: 100%;
+              height: 100%;
+            }
+
             & video {
                 width: 100%;
                 height: 100%;
@@ -44,6 +75,10 @@
     font-size: $heading-font-size;
     color: $secondary-color;
     text-transform: uppercase;
+
+    @media screen and (max-width: 768px) {
+      font-size: 15vw;
+    }
 }
 .paragraph {
     line-height: 29px;
@@ -54,6 +89,9 @@
 }
 .active {
     font-weight: bold;
+    color: rgba(251, 227, 50, 1);
+    text-transform: capitalize;
+    letter-spacing: 1px;
 
 }
 
@@ -104,6 +142,10 @@
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 .ldio-7oqrmoldtcs {
   width: 100%;

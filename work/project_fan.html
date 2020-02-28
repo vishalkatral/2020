@@ -6,19 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <link href="../css/style.css" rel="stylesheet" type="text/css" />
-    <link
-    rel="stylesheet"
-    href="../css/flickity.min.css"
-  />
-
-    <link
-      href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,600|Roboto:400,700,900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="/css/pointer.css" rel="stylesheet" type="text/css">
+    <link href="../css/flickity.min.css" rel="stylesheet"/>
+    <link href="../css//aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,600|Roboto:400,700,900&display=swap" rel="stylesheet"/>
+    
     <title># Selected Projects | Work</title>
 
-    
-    
   </head>
   <body class="workbody">
     
@@ -66,27 +60,42 @@
                     </div>
                   </div>
                 </div>
+
+                <div class="macbook">
+                  <div class="screen">
+                    <div class="viewport" style="background-image:url('../images/work/project-one-ss-1.jpg');">
+                    </div>
+                  </div>
+                  <div class="base"></div>
+                  <div class="notch"></div>
+                </div>
                 
                 <div class="projectscreens-websites">
-                  <div class="projectscreens-websites__item3">
+                  <!-- <div class="projectscreens-websites__item3">
                     <img src="../images/work/mockup1.png" alt="Project One"/>
+                  </div> -->
+                  <div class="projectscreens-websites__item1" data-aos="fade-up">
+                    <!-- <img src="../images/work/project-one-ss-1.jpg" alt="Project One"/> -->
+                    <img src="../images/work/project-one-ss-4.jpg" alt="Project One"/>
                   </div>
-                  <div class="projectscreens-websites__item1">
-                    <img src="../images/work/project-one-ss-1.jpg" alt="Project One"/>
-                  </div>
-                  <div class="projectscreens-websites__item2">
-                    <img src="../images/work/project-one-ss-2.jpg" alt="Project One"/> 
+                  <div class="projectscreens-websites__item2" data-aos="fade-up">
                     <img src="../images/work/project-one-ss-5.jpg" alt="Project One"/> 
                   </div>
 
-                  <div class="projectscreens-websites__item6">
-                    <img src="../images/work/mockup1a.png" alt="Project One"/>
+                  <div class="projectscreens-websites__item6 purple-bg">
+                    <img src="../images/work/mockup1a-iPhone.png" alt="Project One" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" class="iPhone"/>
+
+                    <img src="../images/work/mockup1a-iPad.png" alt="Project One" data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" class="iPad"/>
                   </div>
                  
-                  <div class="projectscreens-websites__item4">
-                    <img src="../images/work/project-one-ss-4.jpg" alt="Project One"/>
+                  <div class="projectscreens-websites__item4" data-aos="fade-up">
+                    <img src="../images/work/project-one-ss-2.jpg" alt="Project One"/> 
                   </div>
-                  <div class="projectscreens-websites__item5">
+                  <div class="projectscreens-websites__item5" data-aos="fade-up">
                     <img src="../images/work/project-one-ss-6.jpg" alt="Project One"/>
                   </div>
                 </div>
@@ -97,13 +106,26 @@
               <a href="project_out.html" class="project-next__link"> prev </a>
               <a href="project_cns.html" class="project-next__link"> next </a>
             </div>
-         
+
+           
          
        
      
 
-    <script src="js/jquery.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
     <!-- JavaScript -->
+    <script src="/js/pointer.js"></script>
+    <script src="/js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+        init_pointer({
+          pointerColor: "#FBE332",
+          ringSize: 15,
+          ringClickSize: 10
+        })
+    </script>
     <script>
       $(window).mousemove(function(event) {
       $("#V, #I, #S, #H, #A, #L").css({

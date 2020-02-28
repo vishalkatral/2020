@@ -132,6 +132,8 @@ body {
 }
 
 
+
+
 h1,
 h2,
 h3,
@@ -158,9 +160,10 @@ a:visited {
 }
 .alphabets {
   display: grid;
-  grid-template-columns: .5fr 1.5fr 1.5fr .5fr;
-  grid-template-rows: .5fr 2fr .5fr;
+  grid-template-columns: .2fr 1.5fr 1.5fr .2fr;
+  grid-template-rows: .5fr 3fr .5fr;
   height: 100vh;
+  position: relative;
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 0 1fr 1fr 0;
@@ -174,11 +177,12 @@ a:visited {
 
     span.letterI {
       color: rgba(251, 227, 50, 0.2);
-      font-size: 130px;
+      font-size: 80px;
       text-transform: uppercase;
       font-family: 'Roboto', sans-serif;
       position: absolute;
-      top: -20px;
+      top: 10px;
+      left: 82px;
       z-index: -1;
 
       @media screen and (max-width: 768px) {
@@ -193,12 +197,12 @@ a:visited {
 
       span.letterS {
         color: rgba(251, 227, 50, 0.2);
-        font-size: 130px;
+        font-size: 80px;
         text-transform: uppercase;
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
         position: absolute;
-        top: 30px;
+        top: -20px;
         z-index:2;
 
         @media screen and (max-width: 768px) {
@@ -217,12 +221,12 @@ a:visited {
 
     span.letterV {
       color: rgba(251, 227, 50, 0.2);
-      font-size: 130px;
+      font-size: 80px;
       text-transform: uppercase;
       font-family: 'Roboto', sans-serif;
       position: absolute;
-      top: 200px;
-      left: -30px;
+      top: 320px;
+      left: -15px;
       z-index:2;
       overflow: hidden;
 
@@ -231,12 +235,32 @@ a:visited {
       }
     }
     }
+
+    .connect {
+      display: none;
+      left: 0px;
+      transform: rotate(-90deg);
+      position: absolute;
+      top: 60%;
+
+      &__profile {
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 900;
+        letter-spacing: 3px;
+        color: rgba(9, 9, 9, 1);
+      }
+    }
   }
   &__item6 {
     grid-column: 2 / 4;
     grid-row: 2 / 3;
-    // background-color: aqua;
     z-index: 1;
+
+    
+    @media screen and (max-width: 768px) {
+      z-index: 1;
+    }
   }
   &__item7 {
     // background-color: grey;
@@ -244,12 +268,12 @@ a:visited {
 
       span.letterH {
         color: rgba(251, 227, 50, 0.2);
-        font-size: 130px;
+        font-size: 80px;
         text-transform: uppercase;
         font-family: 'Roboto', sans-serif;
         position: absolute;
-        top: 160px;
-        right: -30px;
+        top: 80px;
+        right: -15px;
         z-index:2;
         overflow: hidden;
 
@@ -269,7 +293,7 @@ a:visited {
 
     span.letterL {
       color: rgba(251, 227, 50, 0.2);
-      font-size: 130px;
+      font-size: 80px;
       text-transform: uppercase;
       font-family: 'Roboto', sans-serif;
       z-index:0;
@@ -291,7 +315,7 @@ a:visited {
 
       span.letterA {
         color: rgba(251, 227, 50, 0.2);
-        font-size: 130px;
+        font-size: 80px;
         text-transform: uppercase;
         font-family: 'Roboto', sans-serif;
         z-index:2;
@@ -308,6 +332,9 @@ a:visited {
   }
   &__item11 {
     // background-color:pink;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
   &__item12 {
     // background-color: yellowgreen;
@@ -315,27 +342,35 @@ a:visited {
     // grid-column: 3 / 4;
     grid-area: 2 / 3 / 3 / 4;
     z-index:0;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
  
 }
 
 
 // movement of letters on mouse move
-#A {
-  top: 50px;
+// #A {
+//   top: 5px;
+// }
+// #I {
+//   top: 5px;
+// }
+// #H {
+//   top: 5px;
+// }
+// #V {
+//   top: 5px;
+// }
+#S, #L, #mobile {
+  top: 55px;
 }
-#I {
-  top: 50px;
-}
-#H {
-  top: 50px;
-}
-#V {
-  top: 50px;
-}
-#S, #L {
-  top: 50px;
-}
+
+// #V, #I, #S, #H, #A, #L {
+//   display: none;
+// }
 
 .container {
   background: transparent;
